@@ -1,0 +1,66 @@
+@import './base.css';
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary-instr {
+    background-color: #dcdcdc;
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-primary:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+.btn-secondary {
+    background-color: #95a5a6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.h2b {
+    font-weight: bold;
+}
+
+button:hover {
+    background: #f1f3f4;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-margin-t {
+    margin-top: 20px;
+}

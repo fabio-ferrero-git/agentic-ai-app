@@ -1,0 +1,9 @@
+Flask==3.0.3
+json_repair==0.30.0
+mysql-connector-python==8.0.18
+pydantic==2.8.2
+pydantic_core==2.20.1
+python-dotenv==0.21.0
+Requests==2.32.3
+simplejson==3.19.2
+waitress==2.0.0
