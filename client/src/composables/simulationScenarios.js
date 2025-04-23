@@ -39,10 +39,6 @@ export const scenarios = {
                     requiresResponse: true,
                     priority: 'high',
                     followUps: [],
-                    suggested_actions : [
-                        'create_draft',
-                        'create_event'
-                    ]
                 },
                 {
                     id: 'MAIL_1',
