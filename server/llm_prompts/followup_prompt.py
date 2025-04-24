@@ -66,10 +66,10 @@ RESPONSE TYPES:
 {{
    "id": string,  // ID of the response TYPE
    "response": string  // Generated response
-   "event_original_date": string  // Original event date (JUST FOR 'EVENT_RESCHEDULED', null for other TYPES)
-   "event_new_date": string  // New event date (JUST FOR 'EVENT_RESCHEDULED')
-   "day_difference": string  // event_new_date - event_original_date (JUST FOR 'EVENT_RESCHEDULED', null for other TYPES)
-   "time_difference": string // event new hour - event original hour (JUST FOR 'EVENT_RESCHEDULED', null for other TYPES)
+   "event_original_date": string  // Original event date (JUST FOR 'RESCHEDULE_EVENT', null for other TYPES)
+   "event_new_date": string  // New event date (JUST FOR 'RESCHEDULE_EVENT')
+   "day_difference": string  // event_new_date - event_original_date (JUST FOR 'RESCHEDULE_EVENT', null for other TYPES)
+   "time_difference": string // event new hour - event original hour (JUST FOR 'RESCHEDULE_EVENT', null for other TYPES)
 }}
 
 3. Return ONLY the JSON object, no explanations. 
@@ -96,9 +96,9 @@ JSON Answer:
 #
 # Lambda functions for different response types
 #
-EVENT_RESCHEDULED = lambda ctx:\
+RESCHEDULE_EVENT = lambda ctx:\
 f'''
-## RULES FOR 'EVENT_RESCHEDULED' TYPE:
+## RULES FOR 'RESCHEDULE_EVENT' TYPE:
 <rules>
 1. Knowing that NOW is {ctx.get('current_date')} and it is {ctx.get('current_time')}, FIND the DATE and TIME of the EVENT. To do this, you MUST consider the "content" the EMAIL THREAD.  
 2. IMPORTANT: The EVENT'S DATE and TIME is WITHIN the message content of the EMAIL THREAD. 
@@ -112,9 +112,9 @@ f'''
 '''
 
 
-EVENT_ACCEPTED = lambda ctx:\
+ACCEPT_EVENT = lambda ctx:\
 f'''
-## RULES FOR 'EVENT_ACCEPTED' TYPE:
+## RULES FOR 'ACCEPT_EVENT' TYPE:
 <rules>
 1. FIND the NEW DATETIME of the EVENT. To do this, you MUST consider the most recent EMAIL THREAD message "content".
 2. The response MUST MUST ACCEPT the specific proposed new datetime for the EVENT. 
@@ -125,9 +125,9 @@ f'''
 '''
 
 
-EVENT_CANCELLED = lambda ctx:\
+CANCEL_EVENT = lambda ctx:\
 f'''
-## RULES FOR 'EVENT_CANCELLED' TYPE:
+## RULES FOR 'CANCEL_EVENT' TYPE:
 <rules>
 1. The response MUST communicate and emphasize the CANCELLATION of the event.
 2. STRONGLY AVOID TO RESCHEDULE the event. The event MUST BE CANCELLED.
@@ -135,9 +135,9 @@ f'''
 '''
 
 
-TASK_ADDED = lambda ctx:\
+ADD_TASK = lambda ctx:\
 f'''
-## RULES FOR 'TASK_ADDED' TYPE:
+## RULES FOR 'ADD_TASK' TYPE:
 <rules>
 1. The response MUST contain an ADDITIONAL TASK alongside the existing ones.
 2. Examples of additional tasks:
