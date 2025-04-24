@@ -1113,7 +1113,7 @@ export default {
      * @param {string} toast_key - Key for the toast title lookup
      * @param {string} [type='success'] - Toast type ('success', 'warning', etc.)
      * @param {string} [position='top'] - Toast position on screen
-     * @param {number} [duration=4000] - Duration in milliseconds
+     * @param {number} [duration=8000] - Duration in milliseconds
      * @param {Object|null} [action=null] - Action data to include in toast
      * @param {boolean} [warning=false] - Whether to show warning text
      * @returns {Object} Toast instance (can be dismissed programmatically)

@@ -19,7 +19,7 @@ export const scenarios = {
     sales : [
 
         {
-            id: 'sales_pressure_complex',
+            id: 'sales_0',
             name: 'High Volume Sales Management',
             baseEmails: [
                 // Initial Wave (0-30s)
@@ -153,11 +153,11 @@ export const scenarios = {
                     sender: "training@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Product Training Session', you MUST RESCHEDULE the EVENT to a DIFFERENT datetime."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Product Training Session' or proposes to reschedule the 'Product Training Session', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -174,11 +174,11 @@ export const scenarios = {
                     sender: "vip.client@megacorp.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Lunch Meeting Request', you MUST RESCHEDULE the EVENT to a DIFFERENT datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Lunch Meeting Request', you MUST CANCEL the EVENT. The response must specify the reason for CANCELLATION of the event."
                         },
                         {
@@ -195,11 +195,11 @@ export const scenarios = {
                     sender: "manager@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Quarterly Review Meeting' or proposes to reschedule the 'Quarterly Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Quarterly Review Meeting' and the meeting requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -216,11 +216,11 @@ export const scenarios = {
                     sender: "prospect@startup.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Product Demo', you MUST RESCHEDULE the EVENT to a DIFFERENT datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Product Demo', you MUST CANCEL the EVENT. The response must specify the reason for cancellation of the event."
                         },
                         {
@@ -237,11 +237,11 @@ export const scenarios = {
                     sender: "team@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Sales Team Happy Hour' or proposes to reschedule the 'Sales Team Happy Hour', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Sales Team Happy Hour', you MUST CANCEL the EVENT. The response must specify the reason for cancellation of the event."
                         },
                         {
@@ -254,7 +254,7 @@ export const scenarios = {
         },
 
         {
-            id: 'global_expansion_crisis',
+            id: 'sales_1',
             name: 'International Market Launch Pressure',
             baseEmails: [
                 {
@@ -359,11 +359,11 @@ I need your detailed pipeline analysis for my review.`,
                     sender: "vp.international@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'APAC Launch Meeting' or proposes to reschedule the 'APAC Launch Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'APAC Launch Meeting' and the 'APAC Launch Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -380,11 +380,11 @@ I need your detailed pipeline analysis for my review.`,
                     sender: "hr.asia@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Onboarding Session', you MUST RESCHEDULE the 'Onboarding Session' to a DIFFERENT datetime."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Onboarding Session' or proposes to reschedule the 'Onboarding Session', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -401,11 +401,11 @@ I need your detailed pipeline analysis for my review.`,
                     sender: "product.local@company.com",
                     possibleReplies: [
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Product Localization Meeting' and the 'Product Localization Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Product Localization Meeting' or proposes to reschedule the 'Product Localization Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -422,11 +422,11 @@ I need your detailed pipeline analysis for my review.`,
                     sender: "competitive.intel@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Sales Competition Alert Meeting' or proposes to reschedule the 'Sales Competition Alert Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Sales Competition Alert Meeting' and the 'Sales Competition Alert Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -443,11 +443,11 @@ I need your detailed pipeline analysis for my review.`,
                     sender: "compliance@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Compliance Training', you MUST RESCHEDULE the 'Compliance Training' to a DIFFERENT datetime."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Compliance Training' or proposes to reschedule the 'Compliance Training', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -464,11 +464,11 @@ I need your detailed pipeline analysis for my review.`,
                     sender: "partner@bigcorp.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Australian Partner Escalation Meeting', you MUST CANCEL the 'Australian Partner Escalation Meeting'. The response must specify the reason for CANCELLATION of the 'Australian Partner Escalation Meeting'."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Australian Partner Escalation Meeting', you MUST RESCHEDULE the 'Australian Partner Escalation Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -485,11 +485,11 @@ I need your detailed pipeline analysis for my review.`,
                     sender: "finance@company.com",
                     possibleReplies: [
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Q4 APAC Forecast Review' and the 'Q4 APAC Forecast Review' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Q4 APAC Forecast Review' or proposes to reschedule the 'Q4 APAC Forecast Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -502,7 +502,7 @@ I need your detailed pipeline analysis for my review.`,
         },
 
         {
-            id: 'product_launch_crisis',
+            id: 'sales_2',
             name: 'New Product Launch Emergency',
             baseEmails: [
                 {
@@ -604,11 +604,11 @@ I need your pipeline analysis for my report.`,
                     sender: "marketing.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Product Launch Meeting' or proposes to reschedule the 'Product Launch Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Product Launch Meeting' and the 'Product Launch Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -625,11 +625,11 @@ I need your pipeline analysis for my report.`,
                     sender: "support@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Emergency Call' or proposes to reschedule the 'Emergency Call', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Emergency Call', you MUST CANCEL the 'Emergency Call'. The response must specify the reason for CANCELLATION of the 'Emergency Call'."
                         },
                         {
@@ -646,11 +646,11 @@ I need your pipeline analysis for my report.`,
                     sender: "training@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Sales Team Training Session' or proposes to reschedule the 'Sales Team Training Session', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Sales Team Training Session', you MUST RESCHEDULE the 'Sales Team Training Session' to a DIFFERENT datetime."
                         },
                         {
@@ -667,11 +667,11 @@ I need your pipeline analysis for my report.`,
                     sender: "product.manager@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Pricing Strategy Meeting' or proposes to reschedule the 'Pricing Strategy Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Pricing Strategy Meeting' and the 'Pricing Strategy Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -688,11 +688,11 @@ I need your pipeline analysis for my report.`,
                     sender: "customer.success@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Early Adopter Program Meeting' or proposes to reschedule the 'Early Adopter Program Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Early Adopter Program Meeting', you MUST RESCHEDULE the 'Early Adopter Program Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -709,11 +709,11 @@ I need your pipeline analysis for my report.`,
                     sender: "partnerships@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Integration Review Meeting' or proposes to reschedule the 'Integration Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Integration Review Meeting', you MUST CANCEL the 'Integration Review Meeting'. The response must specify the reason for CANCELLATION of the 'Integration Review Meeting'."
                         },
                         {
@@ -730,11 +730,11 @@ I need your pipeline analysis for my report.`,
                     sender: "sales.ops@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Sales Forecast Update Meeting' or proposes to reschedule the 'Sales Forecast Update Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Sales Forecast Update Meeting' and the 'Sales Forecast Update Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -753,7 +753,7 @@ I need your pipeline analysis for my report.`,
      */
     human_resources : [
         {
-            id: 'hr_pressure_complex',
+            id: 'human_resources_0',
             name: 'HR Crisis Management',
             baseEmails: [
                 {
@@ -891,11 +891,11 @@ I need you to cover:
                     sender: "legal@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Discrimination Complaint Meeting' or proposes to reschedule the 'Discrimination Complaint Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Discrimination Complaint Meeting' and the 'Discrimination Complaint Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -912,11 +912,11 @@ I need you to cover:
                     sender: "tech.candidate@email.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Final Interview' or proposes to reschedule the 'Final Interview', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Final Interview', you MUST CANCEL the 'Final Interview'. The response must specify the reason for CANCELLATION of the 'Final Interview'."
                         },
                         {
@@ -933,11 +933,11 @@ I need you to cover:
                     sender: "sales.manager@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Employee Relations Issue Meeting' or proposes to reschedule the 'Employee Relations Issue Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Employee Relations Issue Meeting', you MUST RESCHEDULE the 'Employee Relations Issue Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -954,11 +954,11 @@ I need you to cover:
                     sender: "vp.marketing@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Exit Interview' or proposes to reschedule the 'Exit Interview', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Exit Interview', you MUST CANCEL the 'Exit Interview'. The response must specify the reason for CANCELLATION of the 'Exit Interview'."
                         },
                         {
@@ -975,11 +975,11 @@ I need you to cover:
                     sender: "orientation@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'New Hire Orientation Meeting' or proposes to reschedule the 'New Hire Orientation Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'New Hire Orientation Meeting' and the 'New Hire Orientation Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -992,7 +992,7 @@ I need you to cover:
         },
 
         {
-            id: 'hr_reorganization', // FOLLOW UPS
+            id: 'human_resources_1',
             name: 'Corporate Reorganization Management',
             baseEmails: [
                 {
@@ -1150,11 +1150,11 @@ Must complete before any terminations.`,
                     sender: "ceo@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Reorganization Planning Meeting' or proposes to reschedule the 'Reorganization Planning Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Reorganization Planning Meeting' and the 'Reorganization Planning Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -1171,11 +1171,11 @@ Must complete before any terminations.`,
                     sender: "union.rep@workers.org",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Union Representative Meeting' or proposes to reschedule the 'Union Representative Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Union Representative Meeting', you MUST RESCHEDULE the 'Union Representative Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -1192,11 +1192,11 @@ Must complete before any terminations.`,
                     sender: "operations@company.com",
                     possibleReplies: [
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Department Performance Reviews' and the 'Department Performance Reviews' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Department Performance Reviews' or proposes to reschedule the 'Department Performance Reviews', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -1213,11 +1213,11 @@ Must complete before any terminations.`,
                     sender: "journalist@businessnews.com",
                     possibleReplies: [
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to manage the 'Press Inquiry: Layoff Rumors' and the 'Press Inquiry: Layoff Rumors' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot manage the 'Press Inquiry: Layoff Rumors' or proposes to reschedule the deadline for 'Press Inquiry: Layoff Rumors', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -1234,11 +1234,11 @@ Must complete before any terminations.`,
                     sender: "career.transition@outplace.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Outplacement Services Presentation', you MUST RESCHEDULE the 'Outplacement Services Presentation' to a DIFFERENT datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Outplacement Services Presentation', you MUST CANCEL the 'Outplacement Services Presentation'. The response must specify the reason for CANCELLATION of the 'Outplacement Services Presentation'."
                         },
                         {
@@ -1255,11 +1255,11 @@ Must complete before any terminations.`,
                     sender: "eap.provider@wellness.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'EAP Update Meeting' or proposes to reschedule the 'EAP Update Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'EAP Update Meeting' and the 'EAP Update Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -1276,11 +1276,11 @@ Must complete before any terminations.`,
                     sender: "security@company.com",
                     possibleReplies: [
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Security Team Coordination Meeting' and the 'Security Team Coordination Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Security Team Coordination Meeting' or proposes to reschedule the 'Security Team Coordination Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -1297,11 +1297,11 @@ Must complete before any terminations.`,
                     sender: "it.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'IT Systems Access Review' or proposes to reschedule the 'IT Systems Access Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'IT Systems Access Review' and the 'IT Systems Access Review' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -1318,11 +1318,11 @@ Must complete before any terminations.`,
                     sender: "legal@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Legal Department Advisory Briefing' or proposes to reschedule the 'Legal Department Advisory Briefing', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Legal Department Advisory Briefing', you MUST RESCHEDULE the 'Legal Department Advisory Briefing' to a DIFFERENT datetime."
                         },
                         {
@@ -1335,7 +1335,7 @@ Must complete before any terminations.`,
         },
 
         {
-            id: 'hr_rapid_expansion',
+            id: 'human_resources_2',
             name: 'Rapid Growth and Hiring Surge',
             baseEmails: [
                 {
@@ -1503,11 +1503,11 @@ I want to discuss about
                     sender: "ceo@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Expansion Planning Meeting' or proposes to reschedule the 'Expansion Planning Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Expansion Planning Meeting' and the 'Expansion Planning Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -1524,11 +1524,11 @@ I want to discuss about
                     sender: "talent.acquisition@recruiter.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Recruitment Agency Meeting' or proposes to reschedule the 'Recruitment Agency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Recruitment Agency Meeting', you MUST RESCHEDULE the 'Recruitment Agency Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -1545,11 +1545,11 @@ I want to discuss about
                     sender: "learning@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Training Infrastructure Review' or proposes to reschedule the 'Training Infrastructure Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Training Infrastructure Review' and the 'Training Infrastructure Review' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -1566,11 +1566,11 @@ I want to discuss about
                     sender: "benefits@provider.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Benefits Provider Emergency Meeting' or proposes to reschedule the 'Benefits Provider Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Benefits Provider Emergency Meeting', you MUST RESCHEDULE the 'Benefits Provider Emergency Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -1587,11 +1587,11 @@ I want to discuss about
                     sender: "facilities@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Real Estate Viewing' or proposes to reschedule the 'Real Estate Viewing', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Real Estate Viewing', you MUST RESCHEDULE the 'Real Estate Viewing' to a DIFFERENT datetime."
                         },
                         {
@@ -1608,11 +1608,11 @@ I want to discuss about
                     sender: "it.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'IT Infrastructure Scaling Meeting' or proposes to reschedule the 'IT Infrastructure Scaling Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'IT Infrastructure Scaling Meeting' and the 'IT Infrastructure Scaling Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -1629,11 +1629,11 @@ I want to discuss about
                     sender: "payroll@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Payroll System Upgrade Meeting' or proposes to reschedule the 'Payroll System Upgrade Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Payroll System Upgrade Meeting' and the 'Payroll System Upgrade Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -1650,11 +1650,11 @@ I want to discuss about
                     sender: "compensation@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Compensation Structure Review Meeting' or proposes to reschedule the 'Compensation Structure Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Compensation Structure Review Meeting' and the 'Compensation Structure Review Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -1671,11 +1671,11 @@ I want to discuss about
                     sender: "legal@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Employee Handbook Policy Update Meeting' or proposes to reschedule the 'Employee Handbook Policy Update Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Employee Handbook Policy Update Meeting' and the 'Employee Handbook Policy Update Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -1690,12 +1690,12 @@ I want to discuss about
 
 
     /*
-     * Data analysis 
+     * Data analysis
      */
     data_analysis : [
 
         {
-            id: 'data_analysis_pressure',
+            id: 'data_analysis_0',
             name: 'Data Analysis Emergency Management',
             baseEmails: [
                 {
@@ -1829,11 +1829,11 @@ You'll present my analysis framework to the CEO.`,
                     sender: "cfo@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Data Discrepancy Q4 Reports Meeting' or proposes to reschedule the 'Data Discrepancy Q4 Reports Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Data Discrepancy Q4 Reports Meeting' and the 'Data Discrepancy Q4 Reports Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -1850,11 +1850,11 @@ You'll present my analysis framework to the CEO.`,
                     sender: "data.engineering@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Pipeline Training Session' or proposes to reschedule the 'Pipeline Training Session', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Pipeline Training Session', you MUST RESCHEDULE the 'Pipeline Training Session' to a DIFFERENT datetime."
                         },
                         {
@@ -1871,11 +1871,11 @@ You'll present my analysis framework to the CEO.`,
                     sender: "product.manager@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Customer Satisfaction Analysis' or proposes to reschedule the 'Customer Satisfaction Analysis', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Customer Satisfaction Analysis' and the 'Customer Satisfaction Analysis' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -1892,11 +1892,11 @@ You'll present my analysis framework to the CEO.`,
                     sender: "ai.team@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'ML Discussion Lunch Meeting' or proposes to reschedule the 'ML Discussion Lunch Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'ML Discussion Lunch Meeting', you MUST RESCHEDULE the 'ML Discussion Lunch Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -1913,11 +1913,11 @@ You'll present my analysis framework to the CEO.`,
                     sender: "marketing.lead@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Marketing Analysis Request' or proposes to reschedule the 'Marketing Analysis Request', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Marketing Analysis Request' and the 'Marketing Analysis Request' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -1934,11 +1934,11 @@ You'll present my analysis framework to the CEO.`,
                     sender: "manager@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Quarterly Team Review Meeting' or proposes to reschedule the 'Quarterly Team Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Quarterly Team Review Meeting', you MUST RESCHEDULE the 'Quarterly Team Review Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -1955,11 +1955,11 @@ You'll present my analysis framework to the CEO.`,
                     sender: "community@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Data Science Meetup' or proposes to reschedule the 'Data Science Meetup', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Data Science Meetup', you MUST RESCHEDULE the 'Data Science Meetup' to a DIFFERENT datetime."
                         },
                         {
@@ -1972,7 +1972,7 @@ You'll present my analysis framework to the CEO.`,
         },
 
         {
-            id: 'data_security_incident',
+            id: 'data_analysis_1',
             name: 'Data Security Crisis Management',
             baseEmails: [
                 {
@@ -2110,11 +2110,11 @@ I need your analysis of:
                     sender: "security.team@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Data Security Emergency Meeting' or proposes to reschedule the 'Data Security Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Data Security Emergency Meeting' and the 'Data Security Emergency Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -2131,11 +2131,11 @@ I need your analysis of:
                     sender: "compliance@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Compliance Report Due' or proposes to reschedule the 'Compliance Report Due', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Compliance Report Due' and the 'Compliance Report Due' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -2152,11 +2152,11 @@ I need your analysis of:
                     sender: "audit.team@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Customer Data Audit Meeting' or proposes to reschedule the 'Customer Data Audit Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Customer Data Audit Meeting', you MUST RESCHEDULE the 'Customer Data Audit Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -2173,11 +2173,11 @@ I need your analysis of:
                     sender: "pr.team@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Press Inquiry' or proposes to reschedule the 'Press Inquiry', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Press Inquiry' and the 'Press Inquiry' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -2194,11 +2194,11 @@ I need your analysis of:
                     sender: "it.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Recovery Testing Session' or proposes to reschedule the 'Recovery Testing Session', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Recovery Testing Session' and the 'Recovery Testing Session' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -2215,11 +2215,11 @@ I need your analysis of:
                     sender: "procurement@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Vendor Security Meeting' or proposes to reschedule the 'Vendor Security Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Vendor Security Meeting', you MUST CANCEL the 'Vendor Security Meeting'. The response must specify the reason for CANCELLATION of the 'Vendor Security Meeting'."
                         },
                         {
@@ -2236,11 +2236,11 @@ I need your analysis of:
                     sender: "security.architect@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Authentication System Review Meeting' or proposes to reschedule the 'Authentication System Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Authentication System Review Meeting' and the 'Authentication System Review Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -2257,11 +2257,11 @@ I need your analysis of:
                     sender: "cloud.architect@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Cloud Security Review' or proposes to reschedule the 'Cloud Security Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Cloud Security Review' and the 'Cloud Security Review' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -2274,7 +2274,7 @@ I need your analysis of:
         },
 
         {
-            id: 'product_analytics_crisis',
+            id: 'data_analysis_2',
             name: 'Product Analytics Emergency',
             baseEmails: [
                 {
@@ -2408,11 +2408,11 @@ I need your recommendations for my budget.`,
                     sender: "product.owner@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Product Performance Degradation Meeting' or proposes to reschedule the 'Product Performance Degradation Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Product Performance Degradation Meeting' and the 'Product Performance Degradation Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -2429,11 +2429,11 @@ I need your recommendations for my budget.`,
                     sender: "ux.research@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'User Behavior Analysis Meeting' or proposes to reschedule the 'User Behavior Analysis Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'User Behavior Analysis Meeting' and the 'User Behavior Analysis Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -2450,11 +2450,11 @@ I need your recommendations for my budget.`,
                     sender: "finance.team@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Revenue Assessment Meeting' or proposes to reschedule the 'Revenue Assessment Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Revenue Assessment Meeting', you MUST RESCHEDULE the 'Revenue Assessment Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -2471,11 +2471,11 @@ I need your recommendations for my budget.`,
                     sender: "experimentation@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'A/B Test Emergency Review' or proposes to reschedule the 'A/B Test Emergency Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'A/B Test Emergency Review' and the 'A/B Test Emergency Review' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -2492,11 +2492,11 @@ I need your recommendations for my budget.`,
                     sender: "mobile.product@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Mobile Analytics Review' or proposes to reschedule the 'Mobile Analytics Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Mobile Analytics Review', you MUST CANCEL the 'Mobile Analytics Review'. The response must specify the reason for CANCELLATION of the 'Mobile Analytics Review'."
                         },
                         {
@@ -2513,11 +2513,11 @@ I need your recommendations for my budget.`,
                     sender: "search.team@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Search Function Analysis Meeting' or proposes to reschedule the 'Search Analysis Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Search Analysis Meeting' and the 'Search Analysis Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -2534,11 +2534,11 @@ I need your recommendations for my budget.`,
                     sender: "customer.success@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Customer Segment Impact Review' or proposes to reschedule the 'Customer Segment Impact Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Customer Segment Impact Review', you MUST RESCHEDULE the 'Customer Segment Impact Review' to a DIFFERENT datetime."
                         },
                         {
@@ -2555,11 +2555,11 @@ I need your recommendations for my budget.`,
                     sender: "infrastructure@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Infrastructure Cost Meeting' or proposes to reschedule the 'Infrastructure Cost Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Infrastructure Cost Meeting' and the 'Infrastructure Cost Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -2574,12 +2574,12 @@ I need your recommendations for my budget.`,
 
 
     /*
-     * Design / Creative 
+     * Design / Creative
      */
     design_creative : [
 
         {
-            id: 'design_pressure_complex',
+            id: 'design_creative_0',
             name: 'Creative Team Management Crisis',
             baseEmails: [
                 {
@@ -2760,11 +2760,11 @@ I require your attendance.`,
                     sender: "training@agency.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Adobe Creative Cloud Workshop' or proposes to reschedule the 'Adobe Creative Cloud Workshop', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Adobe Creative Cloud Workshop', you MUST RESCHEDULE the 'Adobe Creative Cloud Workshop' to a DIFFERENT datetime."
                         },
                         {
@@ -2781,11 +2781,11 @@ I require your attendance.`,
                     sender: "startup.founder@techco.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Website Prototype Review', you MUST CANCEL the 'Website Prototype Review'. The response must specify the reason for CANCELLATION of the 'Website Prototype Review'."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Website Prototype Review' or proposes to reschedule the 'Website Prototype Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -2802,11 +2802,11 @@ I require your attendance.`,
                     sender: "hr@agency.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Design Team Performance Review' or proposes to reschedule the 'Design Team Performance Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Design Team Performance Review', you MUST RESCHEDULE the 'Design Team Performance Review' to a DIFFERENT datetime."
                         },
                         {
@@ -2823,11 +2823,11 @@ I require your attendance.`,
                     sender: "newbiz@agency.com",
                     possibleReplies: [
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Pitch Presentation' and the 'Pitch Presentation' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Pitch Presentation' or proposes to reschedule the 'Pitch Presentation', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -2844,11 +2844,11 @@ I require your attendance.`,
                     sender: "project.manager@agency.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Sprint Planning Meeting' or proposes to reschedule the 'Sprint Planning Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Sprint Planning Meeting' and the 'Sprint Planning Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -2865,11 +2865,11 @@ I require your attendance.`,
                     sender: "culture@agency.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Team Social Meeting', you MUST CANCEL the 'Team Social Meeting'. The response must specify the reason for CANCELLATION of the 'Team Social Meeting'."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Team Social Meeting' or proposes to reschedule the 'Team Social Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -2882,7 +2882,7 @@ I require your attendance.`,
         },
 
         {
-            id: 'agency_rebrand_crisis',
+            id: 'design_creative_1',
             name: 'Agency Rebranding Emergency',
             baseEmails: [
                 {
@@ -3037,11 +3037,11 @@ I've been asked to ensure your attendance.`,
                     sender: "ceo@agency.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Agency Rebrand Leak Meeting' or proposes to reschedule the 'Agency Rebrand Leak Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Agency Rebrand Leak Meeting' and the 'Agency Rebrand Leak Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -3058,11 +3058,11 @@ I've been asked to ensure your attendance.`,
                     sender: "account.director@agency.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Client Concerns About Rebrand' or proposes to reschedule the 'Client Concerns About Rebrand', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Client Concerns About Rebrand', you MUST RESCHEDULE the 'Client Concerns About Rebrand' to a DIFFERENT datetime."
                         },
                         {
@@ -3079,11 +3079,11 @@ I've been asked to ensure your attendance.`,
                     sender: "press@designweekly.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Press Interview Request' or proposes to reschedule the 'Press Interview Request', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Press Interview Request', you MUST CANCEL the 'Press Interview Request'. The response must specify the reason for CANCELLATION of the 'Press Interview Request'."
                         },
                         {
@@ -3100,11 +3100,11 @@ I've been asked to ensure your attendance.`,
                     sender: "social.media@agency.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Social Media Crisis Meeting' or proposes to reschedule the 'Social Media Crisis Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Social Media Crisis Meeting' and the 'Social Media Crisis Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -3121,11 +3121,11 @@ I've been asked to ensure your attendance.`,
                     sender: "junior.designer@agency.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Design Team Meeting' or proposes to reschedule the 'Design Team Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Design Team Meeting', you MUST RESCHEDULE the 'Design Team Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -3142,11 +3142,11 @@ I've been asked to ensure your attendance.`,
                     sender: "digital@agency.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Website Update Meeting' or proposes to reschedule the 'Website Update Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Website Update Meeting' and the 'Website Update Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -3163,11 +3163,11 @@ I've been asked to ensure your attendance.`,
                     sender: "newbiz@agency.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Client Portfolio Presentation' or proposes to reschedule the 'Client Portfolio Presentation', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Client Portfolio Presentation', you MUST RESCHEDULE the 'Client Portfolio Presentation' to a DIFFERENT datetime."
                         },
                         {
@@ -3184,11 +3184,11 @@ I've been asked to ensure your attendance.`,
                     sender: "executive.assistant@agency.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Leadership Dinner' or proposes to reschedule the 'Leadership Dinner', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Leadership Dinner', you MUST CANCEL the 'Leadership Dinner'. The response must specify the reason for CANCELLATION of the 'Leadership Dinner'."
                         },
                         {
@@ -3201,7 +3201,7 @@ I've been asked to ensure your attendance.`,
         },
 
         {
-            id: 'design_product_launch_crisis',
+            id: 'design_creative_2',
             name: 'Product Launch Emergency',
             baseEmails: [
                 {
@@ -3394,11 +3394,11 @@ I need your support for my presentation.`,
                     sender: "product@techcorp.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Product Launch Delay Emergency Review Meeting' or proposes to reschedule the 'Product Launch Delay Emergency Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Product Launch Delay Emergency Review Meeting' and the 'Product Launch Delay Emergency Review Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -3415,11 +3415,11 @@ I need your support for my presentation.`,
                     sender: "events@techcorp.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Keynote Presentation Review Meeting' or proposes to reschedule the 'Keynote Presentation Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Keynote Presentation Review Meeting', you MUST RESCHEDULE the 'Keynote Presentation Review Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -3436,11 +3436,11 @@ I need your support for my presentation.`,
                     sender: "marketing@techcorp.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Marketing Assets Review' or proposes to reschedule the 'Marketing Assets Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Marketing Assets Review' and the 'Marketing Assets Review' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -3457,11 +3457,11 @@ I need your support for my presentation.`,
                     sender: "pr@techcorp.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Press Kit Review Meeting' or proposes to reschedule the 'Press Kit Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Press Kit Review Meeting' and the 'Press Kit Review Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -3478,11 +3478,11 @@ I need your support for my presentation.`,
                     sender: "qa@techcorp.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'UI Bug Report Meeting' or proposes to reschedule the 'UI Bug Report Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'UI Bug Report Meeting' and the 'UI Bug Report Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -3499,11 +3499,11 @@ I need your support for my presentation.`,
                     sender: "strategy@techcorp.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Competitor Launch Strategy Meeting' or proposes to reschedule the 'Competitor Launch Strategy Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Competitor Launch Strategy Meeting', you MUST RESCHEDULE the 'Competitor Launch Strategy Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -3520,11 +3520,11 @@ I need your support for my presentation.`,
                     sender: "store@techcorp.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'App Store Review Meeting' or proposes to reschedule the 'App Store Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'App Store Review Meeting' and the 'App Store Review Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -3541,11 +3541,11 @@ I need your support for my presentation.`,
                     sender: "video@techcorp.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Video Emergency Meeting' or proposes to reschedule the 'Video Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Video Emergency Meeting', you MUST RESCHEDULE the 'Video Emergency Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -3562,11 +3562,11 @@ I need your support for my presentation.`,
                     sender: "resource@techcorp.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Design Team Bandwidth Meeting' or proposes to reschedule the 'Design Team Bandwidth Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Design Team Bandwidth Meeting' and the 'Design Team Bandwidth Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -3583,11 +3583,11 @@ I need your support for my presentation.`,
                     sender: "investor.relations@techcorp.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Investor Demo Presentation' or proposes to reschedule the 'Investor Demo Presentation', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Investor Demo Presentation', you MUST RESCHEDULE the 'Investor Demo Presentation' to a DIFFERENT datetime."
                         },
                         {
@@ -3607,7 +3607,7 @@ I need your support for my presentation.`,
     product_management : [
 
         {
-            id: 'product_manager_pressure',
+            id: 'product_management_0',
             name: 'Product Launch Crisis Management',
             baseEmails: [
                 {
@@ -3743,11 +3743,11 @@ I need your support for my presentation.`,
                     sender: "engineering.lead@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Critical Bug in Production Meeting' or proposes to reschedule the 'Critical Bug in Production Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Critical Bug in Production Meeting' and the 'Critical Bug in Production Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -3764,11 +3764,11 @@ I need your support for my presentation.`,
                     sender: "vp.product@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Q4 Product Strategy Review' or proposes to reschedule the 'Q4 Product Strategy Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Q4 Product Strategy Review' and the 'Q4 Product Strategy Review' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -3785,11 +3785,11 @@ I need your support for my presentation.`,
                     sender: "ux.researcher@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'User Research Sessions interview' or proposes to reschedule the 'User Research Sessions interview', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'User Research Sessions interview', you MUST RESCHEDULE the 'User Research Sessions interview' to a DIFFERENT datetime."
                         },
                         {
@@ -3806,11 +3806,11 @@ I need your support for my presentation.`,
                     sender: "scrum.master@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Sprint Planning Conflicts Meeting' or proposes to reschedule the 'Sprint Planning Conflicts Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Sprint Planning Conflicts Meeting' and the 'Sprint Planning Conflicts Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -3827,11 +3827,11 @@ I need your support for my presentation.`,
                     sender: "product.marketing@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Competitor Analysis Meeting' or proposes to reschedule the 'Competitor Analysis Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Competitor Analysis Meeting', you MUST RESCHEDULE the 'Competitor Analysis Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -3848,11 +3848,11 @@ I need your support for my presentation.`,
                     sender: "customer.success@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Customer Escalation Meeting' or proposes to reschedule the 'Customer Escalation Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Customer Escalation Meeting', you MUST CANCEL the 'Customer Escalation Meeting'. The response must specify the reason for CANCELLATION of the 'Customer Escalation Meeting'."
                         },
                         {
@@ -3869,11 +3869,11 @@ I need your support for my presentation.`,
                     sender: "design.lead@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Design Review Meeting' or proposes to reschedule the 'Design Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Design Review Meeting' and the 'Design Review Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -3890,11 +3890,11 @@ I need your support for my presentation.`,
                     sender: "hr.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Team Morale Concern Meeting' or proposes to reschedule the 'Team Morale Concern Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Team Morale Concern Meeting', you MUST RESCHEDULE the 'Team Morale Concern Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -3907,7 +3907,7 @@ I need your support for my presentation.`,
         },
 
         {
-            id: 'product_launch_pressure',
+            id: 'product_management_1',
             name: 'Major Feature Launch Crisis',
             baseEmails: [
                 {
@@ -4060,11 +4060,11 @@ I need your support for my presentation.`,
                     sender: "analytics.lead@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Feature Launch Metrics Meeting' or proposes to reschedule the 'Feature Launch Metrics Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Feature Launch Metrics Meeting' and the 'Feature Launch Metrics Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4081,11 +4081,11 @@ I need your support for my presentation.`,
                     sender: "pr.manager@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Press Release Draft Meeting' or proposes to reschedule the 'Press Release Draft Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Press Release Draft Meeting', you MUST RESCHEDULE the 'Press Release Draft Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -4102,11 +4102,11 @@ I need your support for my presentation.`,
                     sender: "beta.program@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Emergency Customer Escalation Call' or proposes to reschedule the 'Emergency Customer Escalation Call', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Emergency Customer Escalation Call' and the 'Emergency Customer Escalation Call' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4123,11 +4123,11 @@ I need your support for my presentation.`,
                     sender: "ceo@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Investor Update Meeting' or proposes to reschedule the 'Investor Update Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Investor Update Meeting' and the 'Investor Update Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4144,11 +4144,11 @@ I need your support for my presentation.`,
                     sender: "social.media@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Crisis Communications Meeting' or proposes to reschedule the 'Crisis Communications Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Crisis Communications Meeting' and the 'Crisis Communications Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4165,11 +4165,11 @@ I need your support for my presentation.`,
                     sender: "sales.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Sales Emergency Meeting' or proposes to reschedule the 'Sales Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Sales Emergency Meeting', you MUST RESCHEDULE the 'Sales Emergency Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -4186,11 +4186,11 @@ I need your support for my presentation.`,
                     sender: "security.lead@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Security Audit Findings Meeting' or proposes to reschedule the 'Security Audit Findings Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Security Audit Findings Meeting' and the 'Security Audit Findings Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4207,11 +4207,11 @@ I need your support for my presentation.`,
                     sender: "documentation.team@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Feature Documentation Review Meeting' or proposes to reschedule the 'Feature Documentation Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Feature Documentation Review Meeting' and the 'Feature Documentation Review Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4228,11 +4228,11 @@ I need your support for my presentation.`,
                     sender: "devops.lead@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'AWS Infrastructure Meeting' or proposes to reschedule the 'AWS Infrastructure Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'AWS Infrastructure Meeting' and the 'AWS Infrastructure Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4245,7 +4245,7 @@ I need your support for my presentation.`,
         },
 
         {
-            id: 'acquisition_integration_crisis',
+            id: 'product_management_2',
             name: 'Post-Acquisition Integration Emergency',
             baseEmails: [
                 {
@@ -4403,11 +4403,11 @@ I need your support for my presentation.`,
                     sender: "integration.lead@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Integration Timeline Meeting' or proposes to reschedule the 'Integration Timeline Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Integration Timeline Meeting' and the 'Integration Timeline Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4424,11 +4424,11 @@ I need your support for my presentation.`,
                     sender: "data.architect@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Database Emergency Meeting' or proposes to reschedule the 'Database Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Database Emergency Meeting', you MUST RESCHEDULE the 'Database Emergency Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -4445,11 +4445,11 @@ I need your support for my presentation.`,
                     sender: "hr.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Acquired Team Concerns Meeting' or proposes to reschedule the 'Acquired Team Concerns Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Acquired Team Concerns Meeting' and the 'Acquired Team Concerns Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4466,11 +4466,11 @@ I need your support for my presentation.`,
                     sender: "acquired.product.lead@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Roadmap Alignment Meeting' or proposes to reschedule the 'Roadmap Alignment Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Roadmap Alignment Meeting' and the 'Roadmap Alignment Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4487,11 +4487,11 @@ I need your support for my presentation.`,
                     sender: "finance.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Budget Review Meeting' or proposes to reschedule the 'Budget Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Budget Review Meeting', you MUST CANCEL the 'Budget Review Meeting'. The response must specify the reason for CANCELLATION of the 'Budget Review Meeting'."
                         },
                         {
@@ -4508,11 +4508,11 @@ I need your support for my presentation.`,
                     sender: "legal.counsel@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Legal Compliance Meeting' or proposes to reschedule the 'Legal Compliance Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Legal Compliance Meeting' and the 'Legal Compliance Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4529,11 +4529,11 @@ I need your support for my presentation.`,
                     sender: "tech.lead@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Platform Integration Review Meeting' or proposes to reschedule the 'Platform Integration Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Platform Integration Review Meeting' and the 'Platform Integration Review Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4550,11 +4550,11 @@ I need your support for my presentation.`,
                     sender: "support.manager@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Customer Support Systems Review' or proposes to reschedule the 'Customer Support Systems Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Customer Support Systems Review' and the 'Customer Support Systems Review' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4571,11 +4571,11 @@ I need your support for my presentation.`,
                     sender: "sales.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Sales Strategy Meeting' or proposes to reschedule the 'Sales Strategy Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Sales Strategy Meeting' and the 'Sales Strategy Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4590,12 +4590,12 @@ I need your support for my presentation.`,
 
 
     /*
-     * Research 
+     * Research
      */
     research : [
 
         {
-            id: 'research_pressure_complex',
+            id: 'research_0',
             name: 'Academic Research Management',
             baseEmails: [
                 {
@@ -4750,11 +4750,11 @@ I require your attendance.`,
                     sender: "department.head@university.edu",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Grant Review Meeting' or proposes to reschedule the 'Grant Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Grant Review Meeting' and the 'Grant Review Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4771,11 +4771,11 @@ I require your attendance.`,
                     sender: "phd.student@university.edu",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'User Study Code Review Meeting' or proposes to reschedule the 'User Study Code Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'User Study Code Review Meeting' and the 'User Study Code Review Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4792,11 +4792,11 @@ I require your attendance.`,
                     sender: "lab.tech@university.edu",
                     possibleReplies: [
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Lab Equipment Installation Meeting', you MUST CANCEL the 'Lab Equipment Installation Meeting'. The response must specify the reason for CANCELLATION of the 'Lab Equipment Installation Meeting'."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Lab Equipment Installation Meeting' or proposes to reschedule the 'Lab Equipment Installation Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -4813,11 +4813,11 @@ I require your attendance.`,
                     sender: "teaching.admin@university.edu",
                     possibleReplies: [
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Guest Lecture', you MUST RESCHEDULE the 'Guest Lecture' to a DIFFERENT datetime."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Guest Lecture' or proposes to reschedule the 'Guest Lecture', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -4834,11 +4834,11 @@ I require your attendance.`,
                     sender: "microsoft.research@microsoft.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Collaborative Project Meeting' or proposes to reschedule the 'Collaborative Project Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Collaborative Project Meeting' and the 'Collaborative Project Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -4855,11 +4855,11 @@ I require your attendance.`,
                     sender: "admin@university.edu",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Department Meeting' or proposes to reschedule the 'Department Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Department Meeting', you MUST RESCHEDULE the 'Department Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -4872,7 +4872,7 @@ I require your attendance.`,
         },
 
         {
-            id: 'research_conference_deadline',
+            id: 'research_1',
             name: 'Conference Deadline Rush',
             baseEmails: [
                 {
@@ -4991,11 +4991,11 @@ I require your attendance.`,
                     sender: "papers@chi2025.acm.org",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'SIGCHI Paper Extension Meeting' or proposes to reschedule the 'SIGCHI Paper Extension Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'SIGCHI Paper Extension Meeting' and the 'SIGCHI Paper Extension Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -5012,11 +5012,11 @@ I require your attendance.`,
                     sender: "collaborator@stanford.edu",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Data Analysis Issues Review' or proposes to reschedule the 'Data Analysis Issues Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Data Analysis Issues Review' and the 'Data Analysis Issues Review' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -5033,11 +5033,11 @@ I require your attendance.`,
                     sender: "irb@university.edu",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'IRB Research Ethics Meeting' or proposes to reschedule the 'IRB Research Ethics Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'IRB Research Ethics Meeting', you MUST CANCEL the 'IRB Research Ethics Meeting'. The response must specify the reason for CANCELLATION of the 'IRB Research Ethics Meeting'."
                         },
                         {
@@ -5054,11 +5054,11 @@ I require your attendance.`,
                     sender: "grad.school@university.edu",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'PhD Defense' or proposes to reschedule the 'PhD Defense', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'PhD Defense', you MUST RESCHEDULE the 'PhD Defense' to a DIFFERENT datetime."
                         },
                         {
@@ -5075,11 +5075,11 @@ I require your attendance.`,
                     sender: "safety@university.edu",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Safety Inspection' or proposes to reschedule the 'Safety Inspection', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Safety Inspection' and the 'Safety Inspection' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -5096,11 +5096,11 @@ I require your attendance.`,
                     sender: "conference@ubicomp.org",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Program Committee Emergency Meeting' or proposes to reschedule the 'Program Committee Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Program Committee Emergency Meeting', you MUST RESCHEDULE the 'Program Committee Emergency Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -5117,11 +5117,11 @@ I require your attendance.`,
                     sender: "counseling@university.edu",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Student Mental Health Support Meeting' or proposes to reschedule the 'Student Mental Health Support Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Student Mental Health Support Meeting', you MUST RESCHEDULE the 'Student Mental Health Support Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -5134,7 +5134,7 @@ I require your attendance.`,
         },
 
         {
-            id: 'research_grant_crisis',
+            id: 'research_2',
             name: 'Grant and Laboratory Crisis',
             baseEmails: [
                 {
@@ -5266,11 +5266,11 @@ I require your attendance.`,
                     sender: "grants@university.edu",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'NSF Budget Review' or proposes to reschedule the 'NSF Budget Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'NSF Budget Review' and the 'NSF Budget Review' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -5287,11 +5287,11 @@ I require your attendance.`,
                     sender: "lab.manager@university.edu",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Equipment Emergency Meeting' or proposes to reschedule the 'Equipment Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Equipment Emergency Meeting', you MUST CANCEL the 'Equipment Emergency Meeting'. The response must specify the reason for CANCELLATION of the 'Equipment Emergency Meeting'."
                         },
                         {
@@ -5308,11 +5308,11 @@ I require your attendance.`,
                     sender: "faculty.affairs@university.edu",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Tenure Committee Meeting' or proposes to reschedule the 'Tenure Committee Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Tenure Committee Meeting', you MUST RESCHEDULE the 'Tenure Committee Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -5329,11 +5329,11 @@ I require your attendance.`,
                     sender: 'industry.research@industry.com',
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Industry Partner Visit' or proposes to reschedule the 'Industry Partner Visit', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Industry Partner Visit' and the 'Industry Partner Visit' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -5350,11 +5350,11 @@ I require your attendance.`,
                     sender: "ombudsman@university.edu",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Graduate Student Meeting' or proposes to reschedule the 'Graduate Student Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Graduate Student Meeting', you MUST RESCHEDULE the 'Graduate Student Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -5371,11 +5371,11 @@ I require your attendance.`,
                     sender: "department.head@university.edu",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Department Curriculum Meeting' or proposes to reschedule the 'Department Curriculum Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Department Curriculum Meeting' and the 'Department Curriculum Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -5392,11 +5392,11 @@ I require your attendance.`,
                     sender: "research.integrity@university.edu",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Research Integrity Meeting' or proposes to reschedule the 'Research Integrity Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Research Integrity Meeting', you MUST CANCEL the 'Research Integrity Meeting'. The response must specify the reason for CANCELLATION of the 'Research Integrity Meeting'."
                         },
                         {
@@ -5411,12 +5411,12 @@ I require your attendance.`,
 
 
     /*
-     * IT 
+     * IT
      */
     it : [
 
         {
-            id: 'it_security_pressure',
+            id: 'it_0',
             name: 'Critical Infrastructure Management',
             baseEmails: [
                 {
@@ -5563,11 +5563,11 @@ I need your technical support. Let's have a meeting tomorrow at 16:00 PM`,
                     sender: "ciso@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Security Audit Review' or proposes to reschedule the 'Security Audit Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Security Audit Review' and the 'Security Audit Review' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -5584,11 +5584,11 @@ I need your technical support. Let's have a meeting tomorrow at 16:00 PM`,
                     sender: "datacenter@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Server Maintenance' or proposes to reschedule the 'Server Maintenance', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Server Maintenance', you MUST RESCHEDULE the 'Server Maintenance' to a DIFFERENT datetime."
                         },
                         {
@@ -5605,11 +5605,11 @@ I need your technical support. Let's have a meeting tomorrow at 16:00 PM`,
                     sender: "cfo@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Budget Review Meeting' or proposes to reschedule the 'Budget Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Budget Review Meeting', you MUST RESCHEDULE the 'Budget Review Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -5626,11 +5626,11 @@ I need your technical support. Let's have a meeting tomorrow at 16:00 PM`,
                     sender: "enterprise.client@bigcorp.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Client Security Review' or proposes to reschedule the 'Client Security Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Client Security Review', you MUST CANCEL the 'Client Security Review'. The response must specify the reason for CANCELLATION of the 'Client Security Review'."
                         },
                         {
@@ -5647,11 +5647,11 @@ I need your technical support. Let's have a meeting tomorrow at 16:00 PM`,
                     sender: "monitoring@company.com",
                     possibleReplies: [
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Network Emergency Meeting' and the 'Network Emergency Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Network Emergency Meeting' or proposes to reschedule the 'Network Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -5668,11 +5668,11 @@ I need your technical support. Let's have a meeting tomorrow at 16:00 PM`,
                     sender: "compliance@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Security Training Session' or proposes to reschedule the 'Security Training Session', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Security Training Session', you MUST RESCHEDULE the 'Security Training Session' to a DIFFERENT datetime."
                         },
                         {
@@ -5689,11 +5689,11 @@ I need your technical support. Let's have a meeting tomorrow at 16:00 PM`,
                     sender: "aws-support@support.com",
                     possibleReplies: [
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'AWS Emergency Meeting' and the 'AWS Emergency Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'AWS Emergency Meeting' or proposes to reschedule the 'AWS Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -5706,7 +5706,7 @@ I need your technical support. Let's have a meeting tomorrow at 16:00 PM`,
         },
 
         {
-            id: 'digital_transformation_crisis',
+            id: 'it_1',
             name: 'System Migration Emergency',
             baseEmails: [
                 {
@@ -5861,11 +5861,11 @@ I need you as my technical lead.`,
                     sender: "system.alerts@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Security Audit Findings Review' or proposes to reschedule the 'Security Audit Findings Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Security Audit Findings Review' and the 'Security Audit Findings Review' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -5882,11 +5882,11 @@ I need you as my technical lead.`,
                     sender: "projectmanager@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Cloud Migration Meeting' or proposes to reschedule the 'Cloud Migration Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Cloud Migration Meeting', you MUST RESCHEDULE the 'Cloud Migration Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -5903,11 +5903,11 @@ I need you as my technical lead.`,
                     sender: "database.admin@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Emergency Database Recovery Meeting' or proposes to reschedule the 'Emergency Database Recovery Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Emergency Database Recovery Meeting' and the 'Emergency Database Recovery Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -5924,11 +5924,11 @@ I need you as my technical lead.`,
                     sender: "infrastructure@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Legacy Shutdown Procedure' or proposes to reschedule the 'Legacy Shutdown Procedure', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Legacy Shutdown Procedure', you MUST CANCEL the 'Legacy Shutdown Procedure'. The response must specify the reason for CANCELLATION of the 'Legacy Shutdown Procedure'."
                         },
                         {
@@ -5945,11 +5945,11 @@ I need you as my technical lead.`,
                     sender: "qa.team@company.com",
                     possibleReplies: [
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Integration Architecture Review Meeting' and the 'Integration Architecture Review Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Integration Architecture Review Meeting' or proposes to reschedule the 'Integration Architecture Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -5966,11 +5966,11 @@ I need you as my technical lead.`,
                     sender: "vendor.support@techpartner.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Vendor Escalation Meeting' or proposes to reschedule the 'Vendor Escalation Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Vendor Escalation Meeting', you MUST RESCHEDULE the 'Vendor Escalation Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -5987,11 +5987,11 @@ I need you as my technical lead.`,
                     sender: "facilities@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Data Center Emergency Meeting' or proposes to reschedule the 'Data Center Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Data Center Emergency Meeting' and the 'Data Center Emergency Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -6008,11 +6008,11 @@ I need you as my technical lead.`,
                     sender: "monitoring@company.com",
                     possibleReplies: [
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Gateway Emergency Meeting' and the 'Gateway Emergency Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Gateway Emergency Meeting' or proposes to reschedule the 'Gateway Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -6029,11 +6029,11 @@ I need you as my technical lead.`,
                     sender: "compliance@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'DR Exercise' or proposes to reschedule the 'DR Exercise', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'DR Exercise', you MUST RESCHEDULE the 'DR Exercise' to a DIFFERENT datetime."
                         },
                         {
@@ -6046,7 +6046,7 @@ I need you as my technical lead.`,
         },
 
         {
-            id: 'security_incident_response',
+            id: 'it_2',
             name: 'Active Cybersecurity Incident',
             baseEmails: [
                 {
@@ -6201,11 +6201,11 @@ I need your technical documentation.`,
                     sender: "edr.alerts@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Emergency Response Meeting' or proposes to reschedule the 'Emergency Response Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Emergency Response Meeting' and the 'Emergency Response Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -6222,11 +6222,11 @@ I need your technical documentation.`,
                     sender: "ciso@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Emergency Incident Response Meeting' or proposes to reschedule the 'Emergency Incident Response Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Emergency Incident Response Meeting' and the 'Emergency Incident Response Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -6243,11 +6243,11 @@ I need your technical documentation.`,
                     sender: "networksecurity@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Firewall Emergency Meeting' or proposes to reschedule the 'Firewall Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Firewall Emergency Meeting' and the 'Firewall Emergency Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -6264,11 +6264,11 @@ I need your technical documentation.`,
                     sender: "legal@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Customer Data Breach Assessment Meeting' or proposes to reschedule the 'Customer Data Breach Assessment Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Customer Data Breach Assessment Meeting', you MUST RESCHEDULE the 'Customer Data Breach Assessment Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -6285,11 +6285,11 @@ I need your technical documentation.`,
                     sender: "backup.admin@company.com",
                     possibleReplies: [
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Backup Emergency Meeting' and the 'Backup Emergency Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Backup Emergency Meeting' or proposes to reschedule the 'Backup Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -6306,11 +6306,11 @@ I need your technical documentation.`,
                     sender: "soc@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'SOC Emergency Meeting' or proposes to reschedule the 'SOC Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'SOC Emergency Meeting' and the 'SOC Emergency Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -6327,11 +6327,11 @@ I need your technical documentation.`,
                     sender: "communications@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'PR Crisis Meeting' or proposes to reschedule the 'PR Crisis Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'PR Crisis Meeting', you MUST RESCHEDULE the 'PR Crisis Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -6348,11 +6348,11 @@ I need your technical documentation.`,
                     sender: "identity.security@company.com",
                     possibleReplies: [
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'AD Emergency Meeting' and the 'AD Emergency Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'AD Emergency Meeting' or proposes to reschedule the 'AD Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -6369,11 +6369,11 @@ I need your technical documentation.`,
                     sender: "risk.management@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Insurance Provider Meeting' or proposes to reschedule the 'Insurance Provider Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Insurance Provider Meeting', you MUST RESCHEDULE the 'Insurance Provider Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -6388,12 +6388,12 @@ I need your technical documentation.`,
 
 
     /*
-     * Legal 
+     * Legal
      */
     legal : [
 
         {
-            id: 'legal_pressure_complex',
+            id: 'legal_0',
             name: 'Legal Department Crisis Management',
             baseEmails: [
                 {
@@ -6541,11 +6541,11 @@ I need your technical documentation.`,
                     sender: "cio@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Data Breach Meeting' or proposes to reschedule the 'Data Breach Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Data Breach Meeting' and the 'Data Breach Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -6562,11 +6562,11 @@ I need your technical documentation.`,
                     sender: "hr.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Employee Discrimination Meeting' or proposes to reschedule the 'Employee Discrimination Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Employee Discrimination Meeting', you MUST RESCHEDULE the 'Employee Discrimination Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -6583,11 +6583,11 @@ I need your technical documentation.`,
                     sender: "compliance@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'GDPR Training' or proposes to reschedule the 'GDPR Training', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'GDPR Training', you MUST RESCHEDULE the 'GDPR Training' to a DIFFERENT datetime."
                         },
                         {
@@ -6604,11 +6604,11 @@ I need your technical documentation.`,
                     sender: "ip.counsel@techcorp.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Patent Infringement Notice Meeting', you MUST CANCEL the 'Patent Infringement Notice Meeting'. The response must specify the reason for CANCELLATION of the 'Patent Infringement Notice Meeting'."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Patent Infringement Notice Meeting' or proposes to reschedule the 'Patent Infringement Notice Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -6625,11 +6625,11 @@ I need your technical documentation.`,
                     sender: "finance@company.com",
                     possibleReplies: [
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Legal Department Budget Review Meeting' and the 'Legal Department Budget Review Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Legal Department Budget Review Meeting' or proposes to reschedule the 'Legal Department Budget Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -6646,11 +6646,11 @@ I need your technical documentation.`,
                     sender: "audit.committee@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Internal Investigation Meeting' or proposes to reschedule the 'Internal Investigation Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Internal Investigation Meeting' and the 'Internal Investigation Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -6667,11 +6667,11 @@ I need your technical documentation.`,
                     sender: "general.counsel@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Legal Team Strategy Dinner', you MUST CANCEL the 'Legal Team Strategy Dinner'. The response must specify the reason for CANCELLATION of the 'Legal Team Strategy Dinner'."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Legal Team Strategy Dinner' or proposes to reschedule the 'Legal Team Strategy Dinner', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -6684,7 +6684,7 @@ I need your technical documentation.`,
         },
 
         {
-            id: 'legal_regulatory_crisis',
+            id: 'legal_1',
             name: 'Legal Regulatory Compliance Crisis',
             baseEmails: [
                 {
@@ -6808,11 +6808,11 @@ I need your technical documentation.`,
                     sender: "regulator@govagency.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Surprise Regulatory Audit Notice Meeting' or proposes to reschedule the 'Surprise Regulatory Audit Notice Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Surprise Regulatory Audit Notice Meeting' and the 'Surprise Regulatory Audit Notice Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -6829,11 +6829,11 @@ I need your technical documentation.`,
                     sender: "environmental.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Environmental Compliance Review Meeting' or proposes to reschedule the 'Environmental Compliance Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Environmental Compliance Review Meeting' and the 'Environmental Compliance Review Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -6850,11 +6850,11 @@ I need your technical documentation.`,
                     sender: "export.control@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Trade Officials Meeting' or proposes to reschedule the 'Trade Officials Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Trade Officials Meeting', you MUST RESCHEDULE the 'Trade Officials Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -6871,11 +6871,11 @@ I need your technical documentation.`,
                     sender: "it.security@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Privacy Breach Meeting' or proposes to reschedule the 'Privacy Breach Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Privacy Breach Meeting' and the 'Privacy Breach Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -6892,11 +6892,11 @@ I need your technical documentation.`,
                     sender: "safety.officer@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Safety Review Meeting' or proposes to reschedule the 'Safety Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Safety Review Meeting', you MUST RESCHEDULE the 'Safety Review Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -6913,11 +6913,11 @@ I need your technical documentation.`,
                     sender: "compliance@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Regulatory Filing Meeting' or proposes to reschedule the 'Regulatory Filing Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Regulatory Filing Meeting' and the 'Regulatory Filing Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -6934,11 +6934,11 @@ I need your technical documentation.`,
                     sender: "board.secretary@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Board Committee Meeting' or proposes to reschedule the 'Board Committee Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Board Committee Meeting' and the 'Board Committee Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -6955,11 +6955,11 @@ I need your technical documentation.`,
                     sender: "executive.admin@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Compliance Officer Visit Dinner', you MUST CANCEL the 'Compliance Officer Visit Dinner'. The response must specify the reason for CANCELLATION of the 'Compliance Officer Visit Dinner'."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Compliance Officer Visit Dinner' or proposes to reschedule the 'Compliance Officer Visit Dinner', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -6972,7 +6972,7 @@ I need your technical documentation.`,
         },
 
         {
-            id: 'legal_ma_crisis',
+            id: 'legal_2',
             name: 'Legal M&A Crisis Management',
             baseEmails: [
                 {
@@ -7118,11 +7118,11 @@ I have critical deal discussions planned.`,
                     sender: "ma.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Competing Bid Alert Meeting' or proposes to reschedule the 'Competing Bid Alert Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Competing Bid Alert Meeting' and the 'Competing Bid Alert Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -7139,11 +7139,11 @@ I have critical deal discussions planned.`,
                     sender: "due.diligence@consultants.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Due Diligence Review Meeting' or proposes to reschedule the 'Due Diligence Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Due Diligence Review Meeting', you MUST RESCHEDULE the 'Due Diligence Review Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -7160,11 +7160,11 @@ I have critical deal discussions planned.`,
                     sender: "investor.relations@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Stockholder Litigation Threat Meeting' or proposes to reschedule the 'Stockholder Litigation Threat Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Stockholder Litigation Threat Meeting' and the 'Stockholder Litigation Threat Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -7181,11 +7181,11 @@ I have critical deal discussions planned.`,
                     sender: "regulatory.affairs@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Regulatory Review Meeting' or proposes to reschedule the 'Regulatory Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Regulatory Review Meeting', you MUST RESCHEDULE the 'Regulatory Review Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -7202,11 +7202,11 @@ I have critical deal discussions planned.`,
                     sender: "integration.team@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Integration Planning Meeting', you MUST CANCEL the 'Integration Planning Meeting'. The response must specify the reason for CANCELLATION of the 'Integration Planning Meeting'."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Integration Planning Meeting' or proposes to reschedule the 'Integration Planning Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -7223,11 +7223,11 @@ I have critical deal discussions planned.`,
                     sender: "cfo@company.com",
                     possibleReplies: [
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Strategy Meeting' and the 'Strategy Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Strategy Meeting' or proposes to reschedule the 'Strategy Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -7244,11 +7244,11 @@ I have critical deal discussions planned.`,
                     sender: "pr.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Media Leak Response Meeting' or proposes to reschedule the 'Media Leak Response Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Media Leak Response Meeting' and the 'Media Leak Response Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -7265,11 +7265,11 @@ I have critical deal discussions planned.`,
                     sender: "executive.assistant@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Team Dinner', you MUST CANCEL the 'Team Dinner'. The response must specify the reason for CANCELLATION of the 'Team Dinner'."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Team Dinner' or proposes to reschedule the 'Team Dinner', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -7284,12 +7284,12 @@ I have critical deal discussions planned.`,
 
 
     /*
-     * Customer Experience 
+     * Customer Experience
      */
     customer_experience : [
 
         {
-            id: 'cx_support_pressure',
+            id: 'customer_experience_0',
             name: 'High Volume Customer Support Management',
             baseEmails: [
                 {
@@ -7444,11 +7444,11 @@ This is critical for my feature release at 14:00 tomorrow.`,
                     sender: "monitoring@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Emergency Response Meeting' or proposes to reschedule the 'Emergency Response Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Emergency Response Meeting' and the 'Emergency Response Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -7465,11 +7465,11 @@ This is critical for my feature release at 14:00 tomorrow.`,
                     sender: "training@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Knowledge Base System Training' or proposes to reschedule the 'Knowledge Base System Training', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Knowledge Base System Training', you MUST RESCHEDULE the 'Knowledge Base System Training' to a DIFFERENT datetime."
                         },
                         {
@@ -7486,11 +7486,11 @@ This is critical for my feature release at 14:00 tomorrow.`,
                     sender: "vip.customer@megacorp.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'VIP Customer Meeting' or proposes to reschedule the 'VIP Customer Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'VIP Customer Meeting' and the 'VIP Customer Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -7507,11 +7507,11 @@ This is critical for my feature release at 14:00 tomorrow.`,
                     sender: "manager@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Support Team Performance Review Meeting' or proposes to reschedule the 'Support Team Performance Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Support Team Performance Review Meeting', you MUST RESCHEDULE the 'Support Team Performance Review Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -7528,11 +7528,11 @@ This is critical for my feature release at 14:00 tomorrow.`,
                     sender: "angry.customer@startup.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Data Loss Emergency Meeting' or proposes to reschedule the 'Data Loss Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Data Loss Emergency Meeting' and the 'Data Loss Emergency Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -7549,11 +7549,11 @@ This is critical for my feature release at 14:00 tomorrow.`,
                     sender: "director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Support All-Hands Meeting' or proposes to reschedule the 'Support All-Hands Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Support All-Hands Meeting', you MUST RESCHEDULE the 'Support All-Hands Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -7566,7 +7566,7 @@ This is critical for my feature release at 14:00 tomorrow.`,
         },
 
         {
-            id: 'cx_product_launch_pressure',
+            id: 'customer_experience_1',
             name: 'Product Launch Support Management',
             baseEmails: [
                 {
@@ -7722,11 +7722,11 @@ This is critical for my feature release at 14:00 tomorrow.`,
                     sender: "product.manager@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Launch Preparation Meeting' or proposes to reschedule the 'Launch Preparation Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Launch Preparation Meeting' and the 'Launch Preparation Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -7743,11 +7743,11 @@ This is critical for my feature release at 14:00 tomorrow.`,
                     sender: "beta.customer@enterprise.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Emergency Beta Call' or proposes to reschedule the 'Emergency Beta Call', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Emergency Beta Call' and the 'Emergency Beta Call' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -7764,11 +7764,11 @@ This is critical for my feature release at 14:00 tomorrow.`,
                     sender: "hr@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Support Team Onboarding Orientation' or proposes to reschedule the 'Support Team Onboarding Orientation', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Support Team Onboarding Orientation', you MUST RESCHEDULE the 'Support Team Onboarding Orientation' to a DIFFERENT datetime."
                         },
                         {
@@ -7785,11 +7785,11 @@ This is critical for my feature release at 14:00 tomorrow.`,
                     sender: "marketing@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'CAB Meeting' or proposes to reschedule the 'CAB Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'CAB Meeting' and the 'CAB Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -7806,11 +7806,11 @@ This is critical for my feature release at 14:00 tomorrow.`,
                     sender: "integration.partner@vendor.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Vendor Integration Emergency Meeting' or proposes to reschedule the 'Vendor Integration Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Vendor Integration Emergency Meeting' and the 'Vendor Integration Emergency Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -7827,11 +7827,11 @@ This is critical for my feature release at 14:00 tomorrow.`,
                     sender: "pr@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Launch Day Media Interview' or proposes to reschedule the 'Launch Day Media Interview', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Launch Day Media Interview', you MUST RESCHEDULE the 'Launch Day Media Interview' to a DIFFERENT datetime."
                         },
                         {
@@ -7848,11 +7848,11 @@ This is critical for my feature release at 14:00 tomorrow.`,
                     sender: "security@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Security Audit Review' or proposes to reschedule the 'Security Audit Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Security Audit Review' and the 'Security Audit Review' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -7869,11 +7869,11 @@ This is critical for my feature release at 14:00 tomorrow.`,
                     sender: "ceo@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Launch Readiness Meeting' or proposes to reschedule the 'Launch Readiness Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Launch Readiness Meeting' and the 'Launch Readiness Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -7886,7 +7886,7 @@ This is critical for my feature release at 14:00 tomorrow.`,
         },
 
         {
-            id: 'cx_platform_migration',
+            id: 'customer_experience_2',
             name: 'Platform Migration Crisis Management',
             baseEmails: [
                 {
@@ -8047,11 +8047,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "infrastructure@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Emergency Migration Meeting' or proposes to reschedule the 'Emergency Migration Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Emergency Migration Meeting' and the 'Emergency Migration Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -8068,11 +8068,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "enterprise.customer@bigcorp.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Enterprise Migration Meeting' or proposes to reschedule the 'Enterprise Migration Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Enterprise Migration Meeting', you MUST RESCHEDULE the 'Enterprise Migration Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -8089,11 +8089,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "training@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Migration Support Training Session' or proposes to reschedule the 'Migration Support Training Session', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Migration Support Training Session' and the 'Migration Support Training Session' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -8110,11 +8110,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "compliance@healthcare.org",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Healthcare Compliance Review Meeting' or proposes to reschedule the 'Healthcare Compliance Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Healthcare Compliance Review Meeting', you MUST RESCHEDULE the 'Healthcare Compliance Review Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -8131,11 +8131,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "monitoring@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Migration War Room Meeting' or proposes to reschedule the 'Migration War Room Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Migration War Room Meeting' and the 'Migration War Room Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -8152,11 +8152,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "communications@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Customer Town Hall briefing' or proposes to reschedule the 'Customer Town Hall briefing', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Customer Town Hall briefing', you MUST RESCHEDULE the 'Customer Town Hall briefing' to a DIFFERENT datetime."
                         },
                         {
@@ -8173,11 +8173,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "engineering@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Performance Review Meeting' or proposes to reschedule the 'Performance Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Performance Review Meeting' and the 'Performance Review Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -8194,11 +8194,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "ceo@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Executive Emergency Meeting' or proposes to reschedule the 'Executive Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Executive Emergency Meeting' and the 'Executive Emergency Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -8213,12 +8213,12 @@ I've activated my war room in Conference Room C and need your immediate attendan
 
 
     /*
-     * Finance / Accounting 
+     * Finance / Accounting
      */
     finance_accounting : [
 
         {
-            id: 'finance_month_end_pressure',
+            id: 'finance_accounting_0',
             name: 'Month-End Close Crisis Management',
             baseEmails: [
                 {
@@ -8358,11 +8358,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "cfo@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Audit Committee Meeting' or proposes to reschedule the 'Audit Committee Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Audit Committee Meeting' and the 'Audit Committee Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -8379,11 +8379,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "accounting.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Close Training Session' or proposes to reschedule the 'Close Training Session', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Close Training Session', you MUST RESCHEDULE the 'Close Training Session' to a DIFFERENT datetime."
                         },
                         {
@@ -8400,11 +8400,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "irs.auditor@irs.gov",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'IRS Audit Meeting' or proposes to reschedule the 'IRS Audit Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'IRS Audit Meeting', you MUST RESCHEDULE the 'IRS Audit Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -8421,11 +8421,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "treasury.manager@company.com",
                     possibleReplies: [
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Reconciliation Review' and the 'Reconciliation Review' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Reconciliation Review' or proposes to reschedule the 'Reconciliation Review', you MUST ACCEPT the proposed new datetime."
                         },
                         {
@@ -8442,11 +8442,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "investor.relations@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Investor Call' or proposes to reschedule the 'Investor Call', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Investor Call' and the 'Investor Call' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -8463,11 +8463,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "payroll.system@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Payroll Emergency Meeting' or proposes to reschedule the 'Payroll Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Payroll Emergency Meeting' and the 'Payroll Emergency Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -8484,11 +8484,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "budget.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Budget Review Meeting' or proposes to reschedule the 'Budget Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Budget Review Meeting', you MUST RESCHEDULE the 'Budget Review Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -8501,7 +8501,7 @@ I've activated my war room in Conference Room C and need your immediate attendan
         },
 
         {
-            id: 'tax_deadline_crisis',
+            id: 'finance_accounting_1',
             name: 'Quarter-End Tax Crisis Management',
             baseEmails: [
                 {
@@ -8638,11 +8638,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "tax.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Restatement Discussion' or proposes to reschedule the 'Restatement Discussion', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Restatement Discussion' and the 'Restatement Discussion' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -8659,11 +8659,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "state.auditor@state.gov",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'State Audit Opening Conference' or proposes to reschedule the 'State Audit Opening Conference', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'State Audit Opening Conference', you MUST RESCHEDULE the 'State Audit Opening Conference' to a DIFFERENT datetime."
                         },
                         {
@@ -8680,11 +8680,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "it.support@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Software Training' or proposes to reschedule the 'Software Training', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Software Training', you MUST RESCHEDULE the 'Software Training' to a DIFFERENT datetime."
                         },
                         {
@@ -8701,11 +8701,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "customs.officer@govt.gov",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Customs Investigation Meeting' or proposes to reschedule the 'Customs Investigation Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Customs Investigation Meeting', you MUST RESCHEDULE the 'Customs Investigation Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -8722,11 +8722,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "eu.tax.advisor@consultancy.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'VAT Emergency Call' or proposes to reschedule the 'VAT Emergency Call', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'VAT Emergency Call' and the 'VAT Emergency Call' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -8743,11 +8743,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "external.auditor@bigfour.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Provision Review Meeting' or proposes to reschedule the 'Provision Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_RESCHEDULED",
+                            id: "RESCHEDULE_EVENT",
                             description: "If the user agrees to participate in the 'Provision Review Meeting', you MUST RESCHEDULE the 'Provision Review Meeting' to a DIFFERENT datetime."
                         },
                         {
@@ -8764,11 +8764,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "tax.systems@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'System Emergency Meeting' or proposes to reschedule the 'System Emergency Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'System Emergency Meeting' and the 'System Emergency Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -8785,11 +8785,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "cfo@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Board Meeting' or proposes to reschedule the 'Board Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Board Meeting' and the 'Board Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -8802,7 +8802,7 @@ I've activated my war room in Conference Room C and need your immediate attendan
         },
 
         {
-            id: 'merger_crisis',
+            id: 'finance_accounting_2',
             name: 'Acquisition Due Diligence Emergency',
             baseEmails: [
                 {
@@ -8942,11 +8942,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "deal.partner@investmentbank.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Deal Committee Meeting' or proposes to reschedule the 'Deal Committee Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Deal Committee Meeting' and the 'Deal Committee Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -8963,11 +8963,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "integration.director@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Integration Planning Workshop' or proposes to reschedule the 'Integration Planning Workshop', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Integration Planning Workshop' and the 'Integration Planning Workshop' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -8984,11 +8984,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "target.cfo@targetcompany.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Financial Review Meeting' or proposes to reschedule the 'Financial Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Financial Review Meeting', you MUST CANCEL the 'Financial Review Meeting'. The response must specify the reason for CANCELLATION of the 'Financial Review Meeting'."
                         },
                         {
@@ -9005,11 +9005,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "valuation.team@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Board Presentation' or proposes to reschedule the 'Board Presentation', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Board Presentation' and the 'Board Presentation' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -9026,11 +9026,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "external.counsel@lawfirm.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Antitrust Filing Meeting' or proposes to reschedule the 'Antitrust Filing Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Antitrust Filing Meeting' and the 'Antitrust Filing Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -9047,11 +9047,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "audit.partner@bigfour.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Fairness Opinion Review Meeting' or proposes to reschedule the 'Fairness Opinion Review Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "EVENT_CANCELLED",
+                            id: "CANCEL_EVENT",
                             description: "If the user agrees to participate in the 'Fairness Opinion Review Meeting', you MUST CANCEL the 'Fairness Opinion Review Meeting'. The response must specify the reason for CANCELLATION of the 'Fairness Opinion Review Meeting'."
                         },
                         {
@@ -9068,11 +9068,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "actuary@consultancy.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Pension Liability Meeting' or proposes to reschedule the 'Pension Liability Meeting', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Pension Liability Meeting' and the 'Pension Liability Meeting' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {
@@ -9089,11 +9089,11 @@ I've activated my war room in Conference Room C and need your immediate attendan
                     sender: "cfo@company.com",
                     possibleReplies: [
                         {
-                            id: "EVENT_ACCEPTED",
+                            id: "ACCEPT_EVENT",
                             description: "If the user cannot attend the 'Deal Committee Presentation' or proposes to reschedule the 'Deal Committee Presentation', you MUST ACCEPT the proposed new datetime."
                         },
                         {
-                            id: "TASK_ADDED",
+                            id: "ADD_TASK",
                             description: "If the user agrees to participate in the 'Deal Committee Presentation' and the 'Deal Committee Presentation' requires them to perform tasks, you MUST ADD an ADDITIONAL TASK alongside the existing ones."
                         },
                         {

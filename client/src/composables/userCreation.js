@@ -42,7 +42,7 @@ export function useUserCreation() {
             const assigned_scenario = data[2]
             sessionStorage.setItem("uuid", uuid)
             sessionStorage.setItem("sys", 'sys'+assigned_condition)
-            sessionStorage.setItem("scenario-key", urlParams.get('job') + '+' + scenarios[urlParams.get('job')][assigned_scenario].id)
+            sessionStorage.setItem("scenario-key", urlParams.get('job') + '+' + urlParams.get('job') + '_' + assigned_scenario)
             return uuid
         } catch (error) {
             console.error('Error creating user:', error)

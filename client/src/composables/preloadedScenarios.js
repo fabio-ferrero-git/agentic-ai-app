@@ -83,7 +83,7 @@ export const preloadedScenarios_fixedTimestamp = {
      */
     "sales": [
         {
-            "sales_pressure_complex": [
+            "sales_0": [
                 {
                     "start": true,
                     "items": [
@@ -141,7 +141,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "global_expansion_crisis": [
+            "sales_1": [
                 {
                     "start": true,
                     "items": [
@@ -183,7 +183,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "product_launch_crisis": [
+            "sales_2": [
                 {
                     "start": true,
                     "items": [
@@ -248,7 +248,7 @@ export const preloadedScenarios_fixedTimestamp = {
      */
     "human_resources": [
         {
-            "hr_pressure_complex": [
+            "human_resources_0": [
                 {
                     "start": true,
                     "items": [
@@ -290,7 +290,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "hr_reorganization": [
+            "human_resources_1": [
                 {
                     "start": true,
                     "items": [
@@ -348,7 +348,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "hr_rapid_expansion": [
+            "human_resources_2": [
                 {
                     "start": true,
                     "items": [
@@ -413,7 +413,7 @@ export const preloadedScenarios_fixedTimestamp = {
      */
     "data_analysis": [
         {
-            "data_analysis_pressure": [
+            "data_analysis_0": [
                 {
                     "start": true,
                     "items": [
@@ -471,7 +471,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "data_security_incident": [
+            "data_analysis_1": [
                 {
                     "start": true,
                     "items": [
@@ -529,7 +529,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "product_analytics_crisis": [
+            "data_analysis_2": [
                 {
                     "start": true,
                     "items": [
@@ -578,7 +578,7 @@ export const preloadedScenarios_fixedTimestamp = {
      */
     "design_creative": [
         {
-            "design_pressure_complex": [
+            "design_creative_0": [
                 {
                     "start": true,
                     "items": [
@@ -636,7 +636,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "agency_rebrand_crisis": [
+            "design_creative_1": [
                 {
                     "start": true,
                     "items": [
@@ -678,7 +678,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "design_product_launch_crisis": [
+            "design_creative_2": [
                 {
                     "start": true,
                     "items": [
@@ -743,7 +743,7 @@ export const preloadedScenarios_fixedTimestamp = {
      */
     "product_management": [
         {
-            "product_manager_pressure": [
+            "product_management_0": [
                 {
                     "start": true,
                     "items": [
@@ -785,7 +785,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "product_launch_pressure": [
+            "product_management_1": [
                 {
                     "start": true,
                     "items": [
@@ -843,7 +843,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "acquisition_integration_crisis": [
+            "product_management_2": [
                 {
                     "start": true,
                     "items": [
@@ -892,7 +892,7 @@ export const preloadedScenarios_fixedTimestamp = {
      */
     "research": [
         {
-            "research_pressure_complex": [
+            "research_0": [
                 {
                     "start": true,
                     "items": [
@@ -950,7 +950,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "research_conference_deadline": [
+            "research_1": [
                 {
                     "start": true,
                     "items": [
@@ -992,7 +992,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "research_grant_crisis": [
+            "research_2": [
                 {
                     "start": true,
                     "items": [
@@ -1041,7 +1041,7 @@ export const preloadedScenarios_fixedTimestamp = {
      */
     "it": [
         {
-            "it_security_pressure": [
+            "it_0": [
                 {
                     "start": true,
                     "items": [
@@ -1099,7 +1099,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "digital_transformation_crisis": [
+            "it_1": [
                 {
                     "start": true,
                     "items": [
@@ -1157,7 +1157,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "security_incident_response": [
+            "it_2": [
                 {
                     "start": true,
                     "items": [
@@ -1206,7 +1206,7 @@ export const preloadedScenarios_fixedTimestamp = {
      */
     "legal": [
         {
-            "legal_pressure_complex": [
+            "legal_0": [
                 {
                     "start": true,
                     "items": [
@@ -1264,7 +1264,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "legal_regulatory_crisis": [
+            "legal_1": [
                 {
                     "start": true,
                     "items": [
@@ -1322,7 +1322,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "legal_ma_crisis": [
+            "legal_2": [
                 {
                     "start": true,
                     "items": [
@@ -1387,7 +1387,7 @@ export const preloadedScenarios_fixedTimestamp = {
      */
     "customer_experience": [
         {
-            "cx_support_pressure": [
+            "customer_experience_0": [
                 {
                     "start": true,
                     "items": [
@@ -1445,7 +1445,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "cx_product_launch_pressure": [
+            "customer_experience_1": [
                 {
                     "start": true,
                     "items": [
@@ -1487,7 +1487,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "cx_platform_migration": [
+            "customer_experience_2": [
                 {
                     "start": true,
                     "items": [
@@ -1536,7 +1536,7 @@ export const preloadedScenarios_fixedTimestamp = {
      */
     "finance_accounting": [
         {
-            "finance_month_end_pressure": [
+            "finance_accounting_0": [
                 {
                     "start": true,
                     "items": [
@@ -1594,7 +1594,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "tax_deadline_crisis": [
+            "finance_accounting_1": [
                 {
                     "start": true,
                     "items": [
@@ -1652,7 +1652,7 @@ export const preloadedScenarios_fixedTimestamp = {
             ]
         },
         {
-            "merger_crisis": [
+            "finance_accounting_2": [
                 {
                     "start": true,
                     "items": [
